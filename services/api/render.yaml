@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: tumapesa-api
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.0
+      - key: MONGO_URI
+        sync: false # set manually in the Render dashboard — see README
+      - key: JWT_SECRET
+        generateValue: true # Render generates a random secure value
+      - key: JWT_EXPIRES_IN
+        value: 7d

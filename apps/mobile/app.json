@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "TumaPesa",
+    "slug": "tumapesa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.example.tumapesa"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#00A651"
+      },
+      "package": "com.example.tumapesa"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#00A651"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos to upload identity documents.",
+          "cameraPermission": "Allow $(PRODUCT_NAME) to use the camera to capture your identity documents."
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID to sign you in."
+        }
+      ]
+    ]
+  }
+}

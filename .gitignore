@@ -1,0 +1,20 @@
+# Applies to both apps/mobile and services/api regardless of nesting depth.
+
+# Dependencies
+**/node_modules/
+
+# Environment files — never commit real secrets/connection strings
+**/.env
+**/.env.local
+
+# Backend build output
+**/dist/
+
+# Expo / React Native
+**/.expo/
+**/web-build/
+
+# Misc
+**/*.log
+**/.DS_Store
+**/*.zip

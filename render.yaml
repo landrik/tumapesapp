@@ -1,0 +1,20 @@
+# Render Blueprints are detected at the repository root only. This monorepo
+# has the actual backend code in services/api/, so rootDir tells Render to
+# run build/start commands from there instead of the repo root.
+services:
+  - type: web
+    name: tumapesa-api
+    runtime: node
+    plan: free
+    rootDir: services/api
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.0
+      - key: MONGO_URI
+        sync: false # set manually in the Render dashboard — see services/api/README.md
+      - key: JWT_SECRET
+        generateValue: true # Render generates a random secure value
+      - key: JWT_EXPIRES_IN
+        value: 7d
