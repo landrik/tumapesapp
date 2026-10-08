@@ -19,6 +19,8 @@ const CURRENCY_TO_COUNTRY: Record<string, Omit<Country, 'currency'>> = {
   ZAR: { code: 'ZA', name: 'South Africa', callingCode: '27' },
   UGX: { code: 'UG', name: 'Uganda', callingCode: '256' },
   TZS: { code: 'TZ', name: 'Tanzania', callingCode: '255' },
+  RWF: { code: 'RW', name: 'Rwanda', callingCode: '250' },
+  BDI: { code: 'BI', name: 'Burundi', callingCode: '257' },
   PHP: { code: 'PH', name: 'Philippines', callingCode: '63' },
   INR: { code: 'IN', name: 'India', callingCode: '91' },
   PKR: { code: 'PK', name: 'Pakistan', callingCode: '92' },

@@ -13,6 +13,7 @@ export interface Corridor {
   fallbackRate: number;
 }
 
+
 const corridors: Corridor[] = [
   { from: 'GBP', to: 'KES', fee: 2.99, estimatedDelivery: '5 minutes', markupPercent: 1.5, fallbackRate: 168.50 },
   { from: 'GBP', to: 'NGN', fee: 3.49, estimatedDelivery: '30 minutes', markupPercent: 2.0, fallbackRate: 2150.00 },
@@ -24,8 +25,12 @@ const corridors: Corridor[] = [
   { from: 'GBP', to: 'INR', fee: 1.49, estimatedDelivery: '30 minutes', markupPercent: 1.0, fallbackRate: 107.50 },
   { from: 'GBP', to: 'PKR', fee: 1.99, estimatedDelivery: '30 minutes', markupPercent: 2.0, fallbackRate: 393.00 },
   { from: 'GBP', to: 'BDT', fee: 1.99, estimatedDelivery: '1-2 hours', markupPercent: 2.0, fallbackRate: 143.20 },
+  { from: 'GBP', to: 'RWF', fee: 2.99, estimatedDelivery: '5 minutes', markupPercent: 1.5, fallbackRate: 128.40 },
+  { from: 'GBP', to: 'BDI', fee: 3.49, estimatedDelivery: '30 minutes', markupPercent: 2.0, fallbackRate: 1620.00 },
   { from: 'USD', to: 'KES', fee: 2.99, estimatedDelivery: '5 minutes', markupPercent: 1.5, fallbackRate: 128.40 },
   { from: 'USD', to: 'NGN', fee: 3.49, estimatedDelivery: '30 minutes', markupPercent: 2.0, fallbackRate: 1620.00 },
+  { from: 'USD', to: 'RWF', fee: 2.99, estimatedDelivery: '5 minutes', markupPercent: 1.5, fallbackRate: 128.40 },
+  { from: 'USD', to: 'BDI', fee: 3.49, estimatedDelivery: '30 minutes', markupPercent: 2.0, fallbackRate: 1620.00 },
 ];
 
 export default corridors;

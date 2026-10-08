@@ -10,13 +10,21 @@
     ],
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.example.tumapesa"
+      "bundleIdentifier": "com.example.tumapesa",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#00A651"
       },
-      "package": "com.example.tumapesa"
+      "package": "com.example.tumapesa",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ]
     },
     "web": {
       "bundler": "metro"
@@ -42,6 +50,12 @@
           "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID to sign you in."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "aad42775-58aa-45d7-ba54-070c26b03596"
+      }
+    },
+    "owner": "landrik"
   }
 }

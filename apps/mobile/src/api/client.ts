@@ -10,8 +10,8 @@ const TOKEN_KEY = 'tumapesa_auth_token';
 // not your computer, so it must be replaced with your machine's LAN IP
 // (e.g. 192.168.1.x) — same note the backend's own README makes. Android
 // emulators use the special alias 10.0.2.2 to reach the host machine.
-const LOCAL_HOST = Platform.select({ android: '10.0.2.2', default: 'localhost' });
-export const BASE_URL = `http://${LOCAL_HOST}:3000/v1`;
+const LOCAL_HOST = Platform.select({ android: '10.0.2.2', default: '192.168.0.42' });
+export const BASE_URL = `http://${LOCAL_HOST}:5000/v1`;
 
 export const apiClient = axios.create({
   baseURL: BASE_URL,
